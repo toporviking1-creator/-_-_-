@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#8b6ee8">
+<title>Готова в роддом</title>
+<style>
+:root{--bg:#f7f4fb;--card:#fff;--text:#251f31;--muted:#756d80;--violet:#8267dc;--violet2:#aa96ef;--green:#2f9a71;--red:#d95757;--yellow:#e3a82d;--blue:#4b85d2;--shadow:0 10px 28px rgba(67,48,105,.10)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:linear-gradient(#f0eaff,#f8f6fb 360px);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;color:var(--text);padding-bottom:90px}
+main{max-width:720px;margin:auto;padding:16px}
+.hero{padding:24px;border-radius:28px;background:linear-gradient(135deg,var(--violet),var(--violet2));color:#fff;box-shadow:var(--shadow)}
+.hero h1{margin:0 0 7px;font-size:30px}.hero p{margin:0;opacity:.92;line-height:1.4}.pill{display:inline-block;margin-top:14px;padding:8px 11px;border-radius:99px;background:#ffffff2b;font-size:13px;font-weight:700}
+.card{background:var(--card);border-radius:22px;padding:17px;box-shadow:var(--shadow);margin-top:14px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:14px}
+.tile{display:block;text-decoration:none;color:inherit;background:#fff;border-radius:20px;padding:17px;min-height:132px;box-shadow:var(--shadow)}
+.tile .ico{font-size:31px}.tile h3{margin:9px 0 5px}.tile p{margin:0;color:var(--muted);font-size:13px;line-height:1.35}
+section{scroll-margin-top:12px;margin-top:26px}
+.section-title{display:flex;align-items:center;justify-content:space-between;gap:12px}.section-title h2{margin:0;font-size:25px}.home-link{text-decoration:none;color:var(--violet);font-weight:800}
+details{background:#fff;border-radius:18px;margin:10px 0;box-shadow:0 7px 20px rgba(67,48,105,.07);overflow:hidden}
+summary{list-style:none;cursor:pointer;padding:16px;font-weight:850;display:flex;justify-content:space-between;align-items:center}
+summary::-webkit-details-marker{display:none}
+summary:after{content:"＋";color:var(--violet);font-size:22px}details[open] summary:after{content:"−"}
+.content{padding:0 14px 14px}
+.item{display:flex;gap:11px;align-items:flex-start;padding:11px 2px;border-top:1px solid #eee9f2}
+.item:first-child{border-top:0}
+.item input{width:24px;height:24px;accent-color:var(--green);flex:0 0 auto}
+.item b{display:block}.item small{display:block;color:var(--muted);margin-top:3px;line-height:1.35}
+.tag{display:inline-block;padding:4px 7px;border-radius:99px;font-size:10px;font-weight:900;margin-top:6px}
+.req{background:#fde6e6;color:#a23838}.rec{background:#fff2cf;color:#8b620c}.comfort{background:#e3f3ec;color:#287454}.provided{background:#e7f0ff;color:#346aa0}
+.notice{background:#fff;border-radius:18px;padding:15px;margin:10px 0;box-shadow:var(--shadow);line-height:1.45}.green{border-left:6px solid var(--green)}.red{border-left:6px solid var(--red)}.yellow{border-left:6px solid var(--yellow)}
+.bigbutton{display:block;text-decoration:none;text-align:center;color:#fff;background:linear-gradient(135deg,var(--violet),var(--violet2));font-weight:900;font-size:17px;padding:17px;border-radius:18px;margin-top:12px;box-shadow:var(--shadow)}
+.bigbutton.redbtn{background:linear-gradient(135deg,#ca4949,#eb7373)}
+.bottom{position:fixed;left:0;right:0;bottom:0;background:#fffffff0;backdrop-filter:blur(12px);border-top:1px solid #ebe6f0}
+.bottom nav{max-width:720px;margin:auto;display:grid;grid-template-columns:repeat(4,1fr);padding:7px 7px calc(7px + env(safe-area-inset-bottom))}
+.bottom a{text-decoration:none;color:#6f6879;text-align:center;font-size:11px;font-weight:750;padding:5px}.bottom span{display:block;font-size:22px}
+.tip{font-size:12px;color:var(--muted);line-height:1.45}
+@media(max-width:420px){.hero h1{font-size:27px}.tile{min-height:125px}}
+</style>
+</head>
+<body id="top">
+<main>
+<header class="hero">
+  <h1>Готова в роддом</h1>
+  <p>Сумки, документы и госпитализация — всё по шагам.</p>
+  <div class="pill">🏥 Перинатальный центр ГКБ №67</div>
+</header>
+
+<div class="card">
+  <b>Как пользоваться</b>
+  <p class="tip">Нажмите на раздел, затем раскрывайте нужные списки. Галочки работают без JavaScript и прямо в просмотрщике файла.</p>
+</div>
+
+<div class="grid">
+  <a class="tile" href="#bags"><div class="ico">👜</div><h3>Сумки</h3><p>Родблок, после родов и вещи малыша</p></a>
+  <a class="tile" href="#docs"><div class="ico">📄</div><h3>Документы</h3><p>Экстренная и плановая госпитализация</p></a>
+  <a class="tile" href="#when"><div class="ico">🚗</div><h3>Когда ехать</h3><p>Схватки, воды и тревожные симптомы</p></a>
+  <a class="tile" href="#admission"><div class="ico">🏥</div><h3>Поступление</h3><p>Что подготовить перед выездом</p></a>
+</div>
+
+<section id="bags">
+  <div class="section-title"><h2>👜 Сумки</h2><a class="home-link" href="#top">Наверх</a></div>
+  <p class="tip">Разделены по этапам, чтобы не брать всё сразу.</p>
+
+  <details open>
+    <summary>Сумка в родблок</summary>
+    <div class="content">
+      <label class="item"><input type="checkbox"><span><b>Паспорт</b><small>Держите вместе с другими документами.</small><i class="tag req">ОБЯЗАТЕЛЬНО</i></span></label>
+      <label class="item"><input type="checkbox"><span><b>Полис ОМС</b><small>Бумажный или электронный вариант.</small><i class="tag req">ОБЯЗАТЕЛЬНО</i></span></label>
+      <label class="item"><input type="checkbox"><span><b>СНИЛС</b><small>Лучше хранить в папке документов.</small><i class="tag req">ОБЯЗАТЕЛЬНО</i></span></label>
+      <label class="item"><input type="checkbox"><span><b>Обменная карта</b><small>Самый важный медицинский документ при поступлении.</small><i class="tag req">ОБЯЗАТЕЛЬНО</i></span></label>
+      <label class="item"><input type="checkbox"><span><b>Телефон и зарядка</b><small>Удобнее кабель длиной 2–3 метра.</small><i class="tag rec">РЕКОМЕНДУЕТСЯ</i></span></label>
+      <label class="item"><input type="checkbox"><span><b>Вода с удобной крышкой</b><small>Небольшая бутылка, из которой можно пить лёжа.</small><i class="tag req">ОБЯЗАТЕЛЬНО</i></span></label>
+      <label class="item"><input type="checkbox"><span><b>Моющиеся тапочки</b><small>Для душа и перемещения по отделению.</small><i class="tag req">ОБЯЗАТЕЛЬНО</i></span></label>
+      <label class="item"><input type="checkbox"><span><b>Компрессионные чулки</b><small>При плановом КС или по рекомендации врача.</small><i class="tag rec">ПО ПОКАЗАНИЯМ</i></span></label>
+    </div>
+  </details>
+
+  <details>
+    <summary>После родов</summary>
+    <div class="content">
+      <label class="item"><input type="checkbox"><span><b>Послеродовые прокладки</b><small>Выбирайте изделия высокой впитываемости.</small><i class="tag req">ОБЯЗАТЕЛЬНО</i></span></label>
+      <label class="item"><input type="checkbox"><span><b>Одноразовые трусы</b><small>Удобны в первые дни после родов.</small><i class="tag rec">РЕКОМЕНДУЕТСЯ</i></span></label>
+      <label class="item"><input type="checkbox"><span><b>Средства гигиены</b><small>Щётка, паста, шампунь, расчёска, дезодорант.</small><i class="tag req">ОБЯЗАТЕЛЬНО</i></span></label>
+      <label class="item"><input type="checkbox"><span><b>Прокладки для груди</b><small>Могут пригодиться при появлении молока.</small><i class="tag rec">РЕКОМЕНДУЕТСЯ</i></span></label>
+      <label class="item"><input type="checkbox"><span><b>Халат и сорочка</b><small>Уточните, что предоставляет выбранный роддом.</small><i class="tag provided">УТОЧНИТЬ</i></span></label>
+      <label class="item"><input type="checkbox"><span><b>Полотенце и пакет для белья</b><small>Компактное быстросохнущее полотенце удобнее.</small><i class="tag comfort">ДЛЯ КОМФОРТА</i></span></label>
+    </div>
+  </details>
+
+  <details>
+    <summary>Для малыша</summary>
+    <div class="content">
+      <label class="item"><input type="checkbox"><span><b>Подгузники</b><small>Небольшой запас на первые дни.</small><i class="tag req">ОБЯЗАТЕЛЬНО</i></span></label>
+      <label class="item"><input type="checkbox"><span><b>Влажные салфетки</b><small>Без резких ароматизаторов.</small><i class="tag rec">РЕКОМЕНДУЕТСЯ</i></span></label>
+      <label class="item"><input type="checkbox"><span><b>Одноразовые пелёнки</b><small>Полезны при уходе за ребёнком.</small><i class="tag rec">РЕКОМЕНДУЕТСЯ</i></span></label>
+      <label class="item"><input type="checkbox"><span><b>Одежда на выписку</b><small>Подготовьте отдельно и передайте родственникам.</small><i class="tag rec">НА ВЫПИСКУ</i></span></label>
+      <label class="item"><input type="checkbox"><span><b>Автолюлька</b><small>Проверьте крепление заранее.</small><i class="tag rec">НА ВЫПИСКУ</i></span></label>
+    </div>
+  </details>
+</section>
+
+<section id="docs">
+  <div class="section-title"><h2>📄 Документы</h2><a class="home-link" href="#top">Наверх</a></div>
+  <details open>
+    <summary>Экстренное поступление</summary>
+    <div class="content">
+      <label class="item"><input type="checkbox"><span><b>Паспорт</b><i class="tag req">ОБЯЗАТЕЛЬНО</i></span></label>
+      <label class="item"><input type="checkbox"><span><b>Полис ОМС</b><i class="tag req">ОБЯЗАТЕЛЬНО</i></span></label>
+      <label class="item"><input type="checkbox"><span><b>СНИЛС</b><i class="tag req">ОБЯЗАТЕЛЬНО</i></span></label>
+      <label class="item"><input type="checkbox"><span><b>Обменная карта</b><i class="tag req">ОБЯЗАТЕЛЬНО</i></span></label>
+    </div>
+  </details>
+  <details>
+    <summary>Плановая госпитализация</summary>
+    <div class="content">
+      <label class="item"><input type="checkbox"><span><b>Направление</b><small>Бумажное или электронное — по правилам учреждения.</small><i class="tag req">ОБЯЗАТЕЛЬНО</i></span></label>
+      <label class="item"><input type="checkbox"><span><b>Результаты обследований</b><small>Только те, которые просил врач или указаны в памятке.</small><i class="tag rec">РЕКОМЕНДУЕТСЯ</i></span></label>
+      <label class="item"><input type="checkbox"><span><b>Выписки из стационаров</b><small>Особенно после операций и значимых осложнений беременности.</small><i class="tag rec">ЕСЛИ ЕСТЬ</i></span></label>
+    </div>
+  </details>
+</section>
+
+<section id="when">
+  <div class="section-title"><h2>🚗 Когда ехать</h2><a class="home-link" href="#top">Наверх</a></div>
+  <div class="notice green"><b>Регулярные схватки</b><br>Схватки повторяются, усиливаются и интервалы между ними сокращаются.</div>
+  <div class="notice green"><b>Излились воды</b><br>Направляйтесь в приёмное отделение, даже если регулярных схваток пока нет.</div>
+  <div class="notice yellow"><b>Плановая госпитализация</b><br>Приезжайте в назначенную дату и время с документами и направлением.</div>
+  <div class="notice red"><b>Срочно обращайтесь за экстренной помощью</b><br>Кровотечение, резкое ухудшение самочувствия, выраженная головная боль или нарушения зрения на фоне высокого давления, резкое уменьшение шевелений плода, признаки преждевременных родов.</div>
+  <a class="bigbutton redbtn" href="tel:112">🚑 Позвонить 112</a>
+</section>
+
+<section id="admission">
+  <div class="section-title"><h2>🏥 Поступление</h2><a class="home-link" href="#top">Наверх</a></div>
+  <details open>
+    <summary>Что будет в приёмном отделении</summary>
+    <div class="content">
+      <p class="tip">Регистрация, уточнение жалоб и анамнеза, осмотр, оценка состояния матери и плода, после чего определяется отделение и дальнейшая тактика.</p>
+    </div>
+  </details>
+  <details>
+    <summary>Быстрая проверка перед выходом</summary>
+    <div class="content">
+      <label class="item"><input type="checkbox"><span><b>Паспорт</b></span></label>
+      <label class="item"><input type="checkbox"><span><b>Полис ОМС</b></span></label>
+      <label class="item"><input type="checkbox"><span><b>Обменная карта</b></span></label>
+      <label class="item"><input type="checkbox"><span><b>Телефон и зарядка</b></span></label>
+      <label class="item"><input type="checkbox"><span><b>Вода</b></span></label>
+      <label class="item"><input type="checkbox"><span><b>Сумка в родблок</b></span></label>
+    </div>
+  </details>
+  <a class="bigbutton" href="#bags">❤️ Проверить сумку</a>
+</section>
+
+<p class="tip" style="text-align:center;margin-top:26px">Справочный помощник. При тревожных симптомах ориентируйтесь на рекомендации врача и экстренных служб.</p>
+</main>
+
+<div class="bottom">
+<nav>
+<a href="#top"><span>🏠</span>Главная</a>
+<a href="#bags"><span>👜</span>Сумки</a>
+<a href="#when"><span>🚗</span>Когда ехать</a>
+<a href="#admission"><span>🏥</span>Поступление</a>
+</nav>
+</div>
+</body>
+</html>
